@@ -1,0 +1,95 @@
+
+/*contenu #page photos-----------------------------*/
+
+#page .container {
+    display: flex;
+    flex-direction: column;
+
+
+    margin-bottom: 50px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#page img {
+    width: 100%;
+}
+
+/*ligne 1--------------------------------------------*/
+.element1 {
+    display: flex;
+}
+
+.single {
+    display: flex;
+    flex:2;
+   
+}
+
+.l1img1 {
+    flex: 1.5;
+    padding-right: 1%;
+}
+
+.double {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   flex: 1;
+
+}
+
+.l1img3 {
+    flex: 0.75
+}
+
+.l1img4 {
+    flex: 0.75
+}
+
+/*ligne 2-------------------------------------------------*/
+.element2 {
+    display: flex;
+}
+
+
+.l2img1 {
+    flex: 1.5;
+}
+
+.l2img2 {
+    flex: 1.5;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.l2img3 {
+    flex: 0.66;
+}
+/*ligne 3---------------------------------------------------*/
+.element3 {
+    display: flex;
+}
+
+.l3img1 {
+    flex: 1.5;
+}
+
+.l3img2 {
+    flex: 1.5;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.l3img3 {
+    flex: 0.66;
+    padding-right: 0.5%;
+}
+
+.l3img4 {
+   flex: 1.41;
+}
+

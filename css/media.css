@@ -1,0 +1,70 @@
+
+@media (max-width:768px) {
+	/*HEADER RESPONSIVE////////////////*/
+	.titre img {
+		width: 40%;
+	}
+	.titre h1 {
+		font-size: 0.5em;
+	}
+	.downloadcv a  {
+		font-size: 0.5em;
+	}
+	.border {
+		border: solid #00FFF5 1px;
+		padding: 4px;
+	}
+	.cv_center {
+		width: 40%;
+	}
+	.social_icon {
+		width: 50%;
+	}
+	.cv_left, .cv_right {
+		width: 30%;
+	}
+	.suivre_right, .suivre_left{
+		width: 25%;
+	}
+	.cv_left img {
+		/*width: 7%;*/
+	}
+	.cv_left p, .suivre p {
+		font-size: 0.6em;
+	}
+	.fa-2x {
+		font-size: 1em;
+	}
+	.suivre .social_icon a img {
+		width: 15px;
+		height: 15px;
+	}
+	/*FIN HEADER RESPONSIVE////////////////*/
+	/*#competences .container {
+	width: 90%;
+	}*/
+	#presentation {
+		font-size: 0.8em;
+	}
+	#savoir .col {
+		width: 100%;
+		text-align: center;
+	}
+
+	.ligne .col:last-child {
+		margin-top: 50px;
+	}
+
+	.footer_col {
+		width: 100%;
+	}
+
+	.footer_part2col2 {
+		text-align: left;
+	}
+
+	.footer_part1col2 {
+		margin: 15px 0;
+	}
+
+}

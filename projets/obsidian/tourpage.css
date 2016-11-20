@@ -1,0 +1,116 @@
+
+#page .container {
+    margin-bottom: 50px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.projetmusic {                                    /* header sous la navbar avec le titre */
+  text-align: center;
+}
+.projetmusic h1 {
+  font-size: 60px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-weight: 100;
+}
+.projetmusic p {
+  margin-bottom: 5%;
+  color: white;
+}
+                                                  /* header sous la navbar avec le titre */
+.aboutmid2 {
+  width: 25%;
+  padding-left: 5%;
+  padding-right: 10%;
+  text-align: center;
+}
+.aboutmid2 img {
+  width: 130%;
+}
+                            /*left = image et boutons de vente et right = tableau*/
+.leftmusic {
+  width: 29%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+.rightmusic {
+  vertical-align: top;
+
+  width: 100%;
+
+  display: inline-block;
+}
+.musicbutton {
+  text-align: center;
+  padding-top: 33px;
+}
+.musicbutton a {
+  height: 30px;
+  padding-top: 11px ;
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  opacity: 0.6;
+}
+/*.musicontent {
+  padding-top: 40px;
+  margin-left: 10%
+}*/
+.musicboard tr {
+  height: 70px;
+}
+
+.first {
+	border-top: 1px solid grey;
+}
+
+th, td {                                              /*TABLEAU*/
+   border-bottom: 1px solid grey;
+  color: white;
+  height: 45px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.button {
+  text-align: center;
+ /* float: left;*/
+  /*padding-top: 33px;*/
+  margin-top: -3%;
+  margin-bottom: 2%
+}
+
+.button a {
+  height: 30px;
+  padding: 10px 5px 0px 5px;
+
+  display: inline-block;
+  /*width: 50px;*/
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  opacity: 0.6;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button a:hover {
+background-color: #CCC;
+}
+
+.musicontent p {
+  font-size: 1.2em;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}

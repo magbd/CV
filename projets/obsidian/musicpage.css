@@ -1,0 +1,113 @@
+
+
+#about .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.article {
+	width: 300px;
+	text-align: justify;
+}
+
+.article time {
+	text-transform: uppercase;
+	color: white;
+	font-size: 0.8em;
+}
+
+.event {
+	margin-bottom: 1px;
+	font-weight: bold;
+}
+
+.article img {
+	width: 300px;
+}
+
+
+
+#page .container {
+    margin-bottom: 50px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.projetmusic {                                    /* header sous la navbar avec le titre */
+  text-align: center;
+}
+.projetmusic h1 {
+  font-size: 60px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-weight: 100;
+}
+
+.rightmusic h2 {
+margin: 0;
+}
+.projetmusic p {
+  margin-bottom: 5%;
+  color: white;
+}
+                                                  /* header sous la navbar avec le titre */
+.aboutmid2 {
+  width: 25%;
+  padding-left: 5%;
+  padding-right: 10%;
+  text-align: center;
+}
+.aboutmid2 img {
+  width: 130%;
+}
+                            /*left = image et boutons de vente et right = tableau*/
+.leftmusic {
+  width: 29%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+.rightmusic {
+  vertical-align: top;
+  width: 68%;
+  display: inline-block;
+}
+.musicbutton {
+  text-align: center;
+  padding-top: 33px;
+}
+.musicbutton a {
+  height: 30px;
+  padding-top: 11px ;
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  opacity: 0.6;
+}
+.musicontent {
+  padding-top: 40px;
+  /*width: 80%;*/
+  margin: auto
+}
+.musicboard tr {
+  height: 70px;
+}
+
+th, td {                                              /*TABLEAU*/
+   border-bottom: 1px solid grey;
+  color: white;
+  height: 45px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+

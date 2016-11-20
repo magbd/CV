@@ -1,0 +1,133 @@
+/*///////////////////////////////////////////*/
+/* Responsive Styling */
+
+/*@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+}*/
+/*//////////////////////////////////*/
+/*MEDIUM SCREEN*/
+/*//////////////////////////////////*/
+@media (max-width: 768px) {
+/*MENU ===========================*/
+#menu_left {
+	flex: 2;
+}
+#menu_right {
+	flex: 4;
+}
+/*CONTENU ========================*/
+#page {
+	flex-wrap: wrap;
+}
+#gauche {
+  flex: none;
+  width: 100%;
+  order: 2;
+}
+#droite {
+  flex: none;
+  width: 100%;
+  order: 1;
+}
+/*BANDEAU ----------------------------------*/
+#bandeau {
+	flex-wrap: wrap;
+	height: 600px;
+  background: repeating-linear-gradient(
+  45deg,
+  black,
+  black 3px,
+  #131313 3px,
+  #131313 6px
+);
+}
+
+#bandeau .element {
+	flex: none;
+  width: 50%;
+	/*margin-bottom: 10%;*/
+}
+/*CATEGORIES --------------------------*/
+#categories ul li:first-child {
+	visibility: hidden;
+}
+#categories ul li a, #search input, #categ_articles div {
+	width: 85%;
+}
+}
+
+/*//////////////////////////////////*/
+/*SMALL SCREEN*/
+/*//////////////////////////////////*/
+@media (max-width: 360px) {
+/*MENU ===========================*/
+#menu {
+	position: relative;
+}
+#menu_right {
+	display: none;
+	position: absolute;
+}
+#menu_left {
+	justify-content: flex-start;;
+}
+h1 {
+	font-size: 0.8em;
+	padding-left: 5%;
+	width: 50%;
+}
+#menu_burger {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 5%;
+	cursor: pointer;
+}
+#menu_burger a {
+	color: white;
+	display: block;
+}
+/*#menu_burger:hover #menu_right ul {
+	display: block;
+}*/
+#menu ul {
+	height: auto;
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+/*BANDEAU ----------------------------------*/
+#bandeau {
+	height: 900px;
+}
+
+#bandeau .element {
+	flex: none;
+  width: 100%;
+}
+/*CONTENU ========================*/
+#contenu {
+	flex-wrap: wrap;
+}
+#contenu_articles:first-child, #contenu_articles:last-child {
+	width: 85%;
+}
+#contenu_articles .element {
+	margin-top: 50px;
+}
+}

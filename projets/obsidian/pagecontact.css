@@ -1,0 +1,79 @@
+
+/*formulaire contact-----------------------------*/
+
+
+#page .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/*formulaire contact-----------------------------*/
+
+
+.col1 {
+    width: 600px;
+}
+
+.col1 input{
+width: 300px;
+}
+
+.col2 {
+    width: 300px;
+}
+
+.col2 input {
+    margin-bottom: 50px;
+}
+
+input{
+    width: 300px;
+    height: 25px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.5px solid #CCCCCC;
+}
+
+label {
+    display: block;
+    font-size: 0.8em;
+}
+
+.search input {
+    color: white;
+}
+
+
+textarea {
+    width: 500px;
+    height: 200px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0.5px solid #CCCCCC;
+    margin-bottom: 10px;
+}
+
+
+.postnews time {
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.8em;
+
+}
+
+
+.submit {
+    border: none;
+    text-transform: uppercase;
+    height: 40px;
+    font-weight: bold;
+    color: #CCCCCC
+}

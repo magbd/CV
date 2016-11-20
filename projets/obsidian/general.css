@@ -1,0 +1,154 @@
+body {
+	background: url("images/background.jpg");
+	background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-color: #333;
+    background-position: 50%;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: "Open Sans"
+}
+
+.container {
+	margin: 0 auto;
+	width: 80%
+}
+
+
+
+hr {
+    color: white;
+}
+
+
+p {
+    color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+    /*margin-top: 110px;*/
+    font-weight: normal;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: white
+}
+
+/*header----------------------------------------*/
+
+header {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+}
+
+header nav {
+    margin-top: 50px;
+    text-align: center;
+    /*  padding-left: 2%;*/
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+
+}
+
+header nav ul li a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+header h1 {
+    /*display: inline-block;*/
+    /*height: 500px;*/
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 4em;
+    font-style: normal;
+    margin-top: 15%
+
+}
+
+header p {
+    /*display: inline-block;*/
+    color: white;
+    text-transform: uppercase;
+    margin-top: -2.5%
+}
+
+/*articles about obsidian------------------------*/
+
+#about .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.article {
+    width: 300px;
+    text-align: justify;
+}
+
+.article time {
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.8em;
+
+}
+
+.event {
+    margin-bottom: 1px;
+    font-weight: bold;
+    color: white;
+}
+
+#page p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #CCCCCC;
+}
+
+.article img {
+    width: 300px;
+}
+
+
+
+/*footer----------------------------------------*/
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color : white;
+    text-align : center;
+    text-transform: uppercase;
+}
+
+i {
+    margin: 10px;
+}
