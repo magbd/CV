@@ -15,139 +15,66 @@ body {
 }
 
 /*MENU //////////////////////////////////*/
-#menu {
+#nav.closed {
+display: none;
+}
+#nav.opened {
+display: true;
+}
+
+#burger {
+	display: flex;
+	position: absolute;
 	position: fixed;
-	text-align: right;
+	right: 0;
+	color: white;
+	z-index: 4;
+
+}
+
+#burger i {
+	line-height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+#nav {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	position: fixed;
 	width: 100%;
-	top: 20px;
-	right: 20px;
-	color: #0C4762;
+	background-color: #787D85;
+	z-index: 3;
 }
 
-#menu .burger {
-  display: inline-block;
+#nav ul {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	margin: auto 0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
 
-  /*position: fixed;*/
-  border: 0;
-  background: none;
-  outline: 0;
-  padding: 0;
-  cursor: pointer;
-  border-bottom: 4px solid currentColor;
-  width: 28px;
-  transition: border-bottom 1s ease-in-out;
-  -webkit-transition: border-bottom 1s ease-in-out;
-}
-#menu .burger::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-#menu .burger:before {
-  content: "";
-  display: block;
-  border-bottom: 4px solid currentColor;
-  width: 100%;
-  margin-bottom: 5px;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-}
-#menu .burger:after {
-  content: "";
-  display: block;
-  border-bottom: 4px solid currentColor;
-  width: 100%;
-  margin-bottom: 5px;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-}
-
-#menu .burger-check {
-  display: none;
-}
-
-#menu .burger-check:checked ~ .burger {
-  border-bottom: 4px solid transparent;
-  transition: border-bottom 0.8s ease-in-out;
-  -webkit-transition: border-bottom 0.8s ease-in-out;
-}
-#menu .burger-check:checked ~ .burger:before {
-  transform: rotate(-405deg) translateY(1px) translateX(-3px);
-  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-}
-#menu .burger-check:checked ~ .burger:after {
-  transform: rotate(405deg) translateY(-4px) translateX(-5px);
-  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-}
-
-#menu .navigation {
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: max-height 0.5s ease-in-out;
-  transition: max-height 0.5s ease-in-out;
-/*	background-color: grey;
-	width: 30%;
-	position: fixed;
-	right: 0;*/
-}
-
-
-#menu .burger-check:checked ~ .navigation {
-  max-height: 500px;
-  -webkit-transition: max-height 0.5s ease-in-out;
-  transition: max-height 0.5s ease-in-out;
-/*	background-color: grey;
-	width: 30%;
-	position: fixed;
-	right: 0;*/
+	font-size: 0.8em;
 
 }
 
-#menu body {
-  background-color: floralwhite;
-  font-family: 'Libre Baskerville', serif;
-  font-style: italic;
-  font-size: 30px;
-  text-align: center;
+#nav ul li {
+	list-style: none;
+	flex: 1;
+	line-height: 50px;
+	/*line-height: 3.5em;*/
 }
 
-#menu a {
-  color: inherit;
-}
+#nav ul li a {
+	text-decoration: none;
+	color: white;
 
-/*#menu small {
-  font-size: 14px;
-}*/
-
-#menu ul {
-  margin: 0;
-  padding: 0;
 }
-
-#menu li {
-  list-style: none;
-  font-size: 1em;
-  padding: 5px 0;
-}
-#menu li a {
-  text-decoration: none;
-}
-#menu li a:hover {
-  /*text-decoration: underline;*/
-  color: #00ADB5;
-}
-
 /*HEADER ////////////////////////////////////*/
 header {
 	background-image: url("../images/2000px_background.jpg");
