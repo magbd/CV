@@ -15,42 +15,127 @@ body {
 }
 
 /*MENU //////////////////////////////////*/
-#nav.closed {
-display: none;
-}
-#nav.opened {
-display: true;
-}
-
-#burger {
-	display: flex;
-	position: absolute;
+#menu {
 	position: fixed;
-	right: 0;
-	color: white;
-	z-index: 4;
-
 }
 
-#burger i {
-	line-height: 50px;
-	width: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
+#menu .burger {
+  display: inline-block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+  border: 0;
+  background: none;
+  outline: 0;
+	padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid currentColor;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out;
 }
-#nav {
+#menu .burger::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+#menu .burger:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+#menu .burger:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+#menu .burger-check {
+  display: none;
+}
+
+#menu .burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+#menu .burger-check:checked ~ .burger:before {
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+#menu .burger-check:checked ~ .burger:after {
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+#menu .navigation {
 	display: flex;
 	justify-content: center;
+	width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+
+#menu .burger-check:checked ~ .navigation {
+  max-height: 500px;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+#menu body {
+  background-color: floralwhite;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+
+#menu a {
+  color: inherit;
+}
+
+#menu li a:hover {
+  color: #00ADB5;
+}
+
+#menu {
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
 	position: absolute;
 	position: fixed;
 	width: 100%;
-	background-color: #787D85;
+
 	z-index: 3;
 }
 
-#nav ul {
+#menu nav {
+	background-color: #787D85;
+	width: 100%:
+}
+#menu ul {
 	display: flex;
 	width: 80%;
 	justify-content: space-between;
@@ -63,17 +148,16 @@ display: true;
 
 }
 
-#nav ul li {
+#menu ul li {
 	list-style: none;
 	flex: 1;
 	line-height: 50px;
 	/*line-height: 3.5em;*/
 }
 
-#nav ul li a {
+#menu ul li a {
 	text-decoration: none;
 	color: white;
-
 }
 /*HEADER ////////////////////////////////////*/
 header {
