@@ -318,7 +318,7 @@ header {
 }
 /*-----*/
 .down {
-padding-bottom: 50px;
+padding-bottom: 10%;
  }
 
 /*PRESENTATION ////////////////////////////////*/
@@ -344,7 +344,7 @@ padding-bottom: 50px;
 	margin: 2% 0;
 }*/
 
-#presentation div {
+#presentation .presentation_col {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
