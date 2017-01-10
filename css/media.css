@@ -1,5 +1,5 @@
 
-@media (max-width:768px) {
+@media screen and (max-device-width:768px) {
 	/*MENU RESPONSIVE////////////////*/
 	#menu {
 		position: fixed;
@@ -90,7 +90,7 @@
 
 }
 
-@media (max-width:360px) {
+@media screen and (max-device-width:360px) {
 	#menu ul {
 		font-size: 1em;
 	}
