@@ -2,32 +2,34 @@
 @media (max-width:768px) {
 	/*MENU RESPONSIVE////////////////*/
 	#menu {
-		height: 100%;
+		position: fixed;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -1;
+		align-items: center;
 	}
-
 	#menu ul {
 		flex-direction: column;
 		font-size: 1.3em;
+		height: 100%;
 	}
 	#menu ul li {
 		line-height: 100px;
 	}
-	#menu .burger-check:checked ~ .navigation {
-		max-height: 100%;
-	}
+
 	/*HEADER RESPONSIVE////////////////*/
 	.titre img {
 		/*width: 40%;*/
 	}
 	.titre h1 {
-		font-size: 0.8em;
+		/*font-size: 0.8em;*/
 	}
 	.downloadcv a  {
-		font-size: 0.5em;
+		/*font-size: 0.5em;*/
 	}
 	.border {
 		border: solid #00FFF5 1px;
-		padding: 4px;
+		/*padding: 4px;*/
 	}
 	.cv_center {
 		width: 40%;
@@ -42,22 +44,26 @@
 		width: 25%;
 	}
 	.cv_left img {
-		/*width: 7%;*/
+		width: 15%;
 	}
+	.suivre_right img {
+    width: 15%;
+}
 	.cv_left p, .suivre p {
-		font-size: 0.6em;
-	}
-	.fa-2x {
 		font-size: 1em;
 	}
+	.fa-2x {
+		font-size: 1.5em;
+	}
 	.suivre .social_icon a img {
-		width: 15px;
-		height: 15px;
+		width: 20px;
+		height: 20px;
 	}
 	/*FIN HEADER RESPONSIVE////////////////*/
-	/*#competences .container {
-	width: 90%;
-	}*/
+	#competences .element {
+	    margin: 10%;
+			margin-bottom: 40px;
+	}
 	#presentation {
 		font-size: 0.8em;
 	}
@@ -84,7 +90,7 @@
 
 }
 
-@media (max-width:320px) {
+@media (max-width:360px) {
 	#menu ul {
 		font-size: 1em;
 	}

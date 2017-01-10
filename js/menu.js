@@ -1,9 +1,18 @@
-var $nav = document.getElementById("nav");
-var $burgerOn = document.getElementById("burger");
+$(document).ready(function(){
+  // menu masqué à l'ouverture
+  $('#menu').hide();
 
-function affiche(){
-  $nav.classList.remove("closed");
-  $nav.classList.add("opened");
-}
+  $('#nav-icon3').click(function(){
+  //animation burger
+  $(this).toggleClass('open');
+  // ouverture du menu
+  $('#menu').slideToggle();
+});
 
-$burgerOn.onclick = affiche;
+// défilement smoothscroll
+$(".scroll").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+});
+
+});
