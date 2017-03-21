@@ -538,31 +538,44 @@ h4 {
 }
 
 /*SAVOIR FAIRE //////////////////////////////*/
-#savoir {
+/*#savoir {
   display: flex;
   flex-direction: column;
-  padding: 5% 0 10% 0;
-}
+}*/
 
-#savoir .ligne {
-  display: flex;
+.savoir {
+  /*display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;*/
+  display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-
+  flex-wrap: wrap;
+  /*height: 250px;*/
+  height: 25%;
 }
 
-#savoir .col {
+.savoirCol {
+  /*display: flex;
+  flex-direction: column;
+  width: 28%;
+  text-align: justify;*/
   display: flex;
   flex-direction: column;
-  width: 40%
-
+  width: 28%;
+  text-align: justify;
 }
 
-#savoir hr {
+.savoirCol hr {
   margin-bottom: 15px;
 }
+
+.iconeCompetence{
+  margin-bottom: 5%;
+  height: 20%;
+  filter: opacity(75%);
+}
+
 
 /*FOOTER ///////////////////////////////*/
 footer {
